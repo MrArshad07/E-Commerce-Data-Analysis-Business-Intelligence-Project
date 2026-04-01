@@ -1,118 +1,87 @@
-E-Commerce Data Analysis & Business Intelligence Project
+🛒 E-Commerce Sales & Customer Behavior Analysis
 📌 Project Overview
 
-This project presents an end-to-end data analysis pipeline for an e-commerce dataset, simulating real-world business scenarios similar to large-scale platforms like Amazon. It covers data cleaning, exploratory data analysis (EDA), SQL-based business problem solving, and interactive dashboard visualization.
-
-The goal is to extract actionable insights that drive business growth, customer satisfaction, and operational efficiency.
+This project focuses on analyzing e-commerce data to understand customer behavior, revenue trends, and delivery performance using SQL, Python, and Power BI. The objective is to transform raw transactional data into meaningful insights that support business decision-making and improve overall operational efficiency.
 
 🎯 Objectives
-Analyze customer purchasing behavior
-Identify revenue trends and key markets
+Analyze revenue trends and sales performance
+Identify top-performing states and cities
+Understand customer purchasing behavior
 Evaluate delivery performance and logistics efficiency
-Understand customer satisfaction through review scores
-Segment high-value customers for targeted strategies
-🛠️ Tech Stack
-Python (Pandas, NumPy)
-Data Visualization (Matplotlib, Seaborn)
-SQL (MySQL)
-Power BI (Dashboard & KPI visualization)
-Jupyter Notebook
-📂 Project Structure
-├── data/
-├── notebooks/
-│   └── EDA_and_Data_Cleaning.ipynb
-├── sql/
-│   └── business_queries.sql
-├── dashboard/
-│   └── powerbi_dashboard.pbix
-├── images/
-│   └── 
-└── README.md<img width="1920" height="1080" alt="Screenshot (78)" src="https://github.com/user-attachments/assets/7f53333b-1d2e-40df-b67e-997624c6ac4d" />
+Segment high-value customers
+🛠️ Tools & Technologies Used
+SQL (MySQL) – Data extraction and business queries
+Python (Pandas, NumPy) – Data cleaning and analysis
+Matplotlib & Seaborn – Data visualization & outlier detection
+Power BI – Interactive dashboard and KPI visualization
 
-🔍 Data Cleaning & Preprocessing
-Removed irrelevant columns (e.g., product dimensions, unused timestamps)
-Handled missing values and inconsistencies
+📂 Dataset
+Source: Brazilian E-Commerce Dataset (Olist)
+Contains:
+Customer data
+Orders & payments
+Product details
+Reviews & delivery information
+
+🔄 Project Workflow
+
+1️⃣ Data Collection
+
+Imported dataset into MySQL database
+
+2️⃣ Data Cleaning (Python - Pandas)
+Removed unnecessary columns
+Handled missing values
+Converted data types
 Performed outlier detection using boxplots
-Standardized data formats for analysis
-📊 Exploratory Data Analysis (EDA)
-Distribution analysis of orders, payments, and reviews
-Correlation between delivery time and review scores
-Identification of skewness and outliers
-Category-wise performance insights
-🧮 SQL Business Analysis
-Key Business Questions Answered:
-Top-performing states and cities by revenue
-Monthly revenue and order trends
-Product category performance based on review scores
-Delivery performance across regions
-High-value customer segmentation
-📈 Dashboard (Power BI)
-Key KPIs:
-💰 Total Revenue: 41.16M
-📦 Total Orders: 99.44K
-👥 Total Customers: 99K
-⭐ Average Review Score: 3.99
-Features:
-Revenue trend over time
-Geographic sales distribution (map visualization)
-Order status breakdown
-Payment method analysis
-Top-performing state identification
-🔥 Advanced Business Insights
-1. Revenue Concentration Risk
-Majority of revenue comes from a single state (São Paulo)
-Indicates dependency on a limited geographic region
 
-👉 Recommendation:
+3️⃣ Data Analysis (SQL + Python)
+Top states by revenue
+Top cities by number of orders
+Product category performance
+Customer segmentation (high-value customers)
+Monthly revenue trends
+Delivery time analysis
 
-Expand operations in underperforming states
-2. Delivery Performance Impacts Customer Satisfaction
-Faster deliveries correlate with higher review scores
-Delays reduce customer satisfaction significantly
+4️⃣ Data Visualization (Power BI)
+Interactive dashboard
+KPI metrics
+Geographic sales analysis
+Revenue trend visualization
+<img width="1920" height="1080" alt="Screenshot (78)" src="https://github.com/user-attachments/assets/2425a9d2-edbb-45f9-ace3-a1b3ff9a3f1c" />
 
-👉 Recommendation:
 
-Optimize last-mile delivery logistics
-Introduce faster shipping options
-3. High-Demand Cities Face Logistics Bottlenecks
-Cities with high order volume show increased delivery times
+📊 Key Insights
+Revenue is highly concentrated in top states (e.g., São Paulo)
+Faster delivery leads to higher customer satisfaction (better reviews)
+High-demand cities show potential logistics delays
+A small group of customers contributes significantly to total revenue
+Seasonal trends impact sales performance
 
-👉 Recommendation:
+📈 Dashboard Features
+💰 Total Revenue Overview
+📦 Order Distribution by Status
+🌍 Sales by State (Map Visualization)
+💳 Payment Method Analysis
+📊 Monthly Revenue Trend
+⭐ Customer Review Insights
+🚀 How to Run the Project
+Clone the repository
+Import dataset into MySQL
+Run SQL queries from /sql folder
+Execute Python notebook for EDA
+Open Power BI dashboard file
 
-Establish local fulfillment centers
-Improve supply chain efficiency
-4. Customer Segmentation (High-Value Customers)
-A small group of customers contributes significantly to revenue
+📌 Future Improvements
+Add Customer Lifetime Value (CLV) analysis
+Build predictive models (sales & delivery time)
+Automate ETL pipeline
+Deploy dashboard online
+🙌 Author
 
-👉 Recommendation:
+Arshad Sayyad
+Aspiring Data Analyst | SQL | Python | Power BI
 
-Implement loyalty programs and personalized offers
-5. Seasonal Trends & Demand Fluctuations
-Revenue shows growth but also periodic fluctuations
+⭐ If you like this project
 
-👉 Recommendation:
-
-Plan inventory and marketing campaigns based on seasonal demand
-6. Shipping Cost Optimization Opportunity
-High freight costs relative to product price in some orders
-
-👉 Recommendation:
-
-Introduce free shipping thresholds
-Optimize delivery partnerships
-🚀 Future Enhancements
-Customer Lifetime Value (CLV) modeling
-Churn prediction using machine learning
-Demand forecasting for inventory optimization
-Real-time dashboard integration
-💼 Business Impact
-
-This project demonstrates the ability to:
-Translate raw data into actionable insights
-Solve real-world business problems using SQL and analytics
-Build interactive dashboards for decision-making
-Apply data-driven strategies to improve revenue and customer experience
-📸 Dashboard Preview
-
-(<img width="1920" height="1080" alt="Screenshot (78)" src="https://github.com/user-attachments/assets/3b103e98-8844-47fe-a11f-2d093b8c98b7" />
-)
+Give it a ⭐ on GitHub!
